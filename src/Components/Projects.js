@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Projects({description, length}) {
+export default function Projects({description, length, link}) {
         
     const[isExpanded, setIsExpanded] = useState(false); 
     
@@ -10,7 +10,7 @@ export default function Projects({description, length}) {
 
     return (
         <section className="image-container">
-            <img className="project-img" src="https://i.etsystatic.com/20149620/r/il/1ad7b1/1873153944/il_1588xN.1873153944_oj8k.jpg" alt="To do list" />
+            <a href={link} target="blank"><img className="project-img" src="https://i.etsystatic.com/20149620/r/il/1ad7b1/1873153944/il_1588xN.1873153944_oj8k.jpg" alt="To do list" /></a>
             <p className="project-dscrp">
                 {isExpanded ? description : `${description.slice(0, length)}...`}
                 <span>
