@@ -54,23 +54,24 @@ body::-webkit-scrollbar{
 }
 
 .image-container {
-  height: 430px;
+  height: 400px;
   margin-bottom: 36px;
 }
 
 .project-img {
-  height: 400px;
+  height: 300px;
   border: 2px solid black;
 }
 
 .project-dscrp {
-  max-width: 280px;
+  max-width: 220px;
   position: absolute;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   text-indent: 5px;
   transition: height 0.5 ease-in-out;
+  /* add a word strectch instead of line break */
 }
 
 button {
@@ -84,6 +85,7 @@ button {
 }
 
 /* think to use clip property for  overflow text */
+
 
 /* begin responsiveness for mobile */
 @media (max-width: 600px) {

@@ -2,18 +2,20 @@ import React from "react";
 import Projects from "./Projects";
 
 export default function Work() {
-    const textStuff = {
-        description: "This is the description of the above image and it will have an option to be less or more. i shoul dprobably use an api for all this info and that;s what ill work on next",
+    const data = {
+        description: `This is a To-Do List made with JavaScript and has basic functionality. Click here for the source code` ,
         descriptionLength: 80,
+        link: "https://github.com/davidl117/todo-list",
     }
 
     return (
       <div className="project-frame">
         <Projects 
-            description={textStuff.description}
-            length={textStuff.descriptionLength}
+            link={data.link}
+            description={data.description}
+            length={data.descriptionLength}
         />
-    
+       
       </div>
     );
   }
