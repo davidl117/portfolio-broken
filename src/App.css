@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-style: oblique;
+  font-variant-caps: all-petite-caps;
+  background-color: wheat;
+}
+
+.header-container {
+  max-width: 300px;
+  padding-left: 5%;
+}
+
+.header-container > h1 {
+  margin-top: 10px;
+}
+
+.header-container > h1, h3, h4 {
+  margin-top: 15px;
+}
+
+.nav-container {
+  max-width: 200px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.nav-container > li {
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+.app-container {
+  display: flex;
+  align-items: initial;
+  margin-top: 5%;
+}
+
+.project-frame {
+  padding-left: 5%; 
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto ; 
+  gap: 5px;
+}
+
+.image-container {
+  height: 430px;
+  margin-bottom: 36px;
+}
+
+.project-img {
+  height: 400px;
+  border: 2px solid black;
+}
+
+.project-dscrp {
+  max-width: 280px;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-indent: 5px;
+  transition: height 0.5 ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+.display-text-btn {
+  padding: 5px;
+  border: none;
+  color: seagreen
+}
+
+/* think to use clip property for  overflow text */
+
+/* begin responsiveness for mobile */
+@media (max-width: 600px) {
+  .app-container {
+      display: block;
+      text-align: center;
+      min-width: 360px;
+  }
+  .nav-container {
+      display: flex;
+      gap: 70px;
+      min-width: 339px;    
+  }
+}
