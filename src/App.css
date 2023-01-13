@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font 
+}
+
 body::-webkit-scrollbar{
   display: none;
   -ms-overflow-style: none;
@@ -54,11 +58,13 @@ body::-webkit-scrollbar{
 }
 
 .image-container {
-  height: 400px;
+  width: 260px;
+  height: 300px;
   margin-bottom: 36px;
 }
 
 .project-img {
+  width: 260px;
   height: 300px;
   border: 2px solid black;
 }
@@ -67,9 +73,8 @@ body::-webkit-scrollbar{
   max-width: 220px;
   position: absolute;
   overflow: hidden;
-  text-overflow: ellipsis;
   display: block;
-  text-indent: 5px;
+  text-indent: 3px;
   transition: height 0.5 ease-in-out;
   /* add a word strectch instead of line break */
 }
