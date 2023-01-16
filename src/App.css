@@ -5,7 +5,7 @@
 }
 
 body {
-  font 
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -18,8 +18,17 @@ body::-webkit-scrollbar{
 }
 
 .header-container {
+  margin-top: 8%;
+  margin-left: 15%;
   max-width: 300px;
   padding-left: 5%;
+  animation: left-to-right 400ms ease-in;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translatex(-100%)
+  }
 }
 
 .header-container > h1 {
@@ -30,7 +39,12 @@ body::-webkit-scrollbar{
   margin-top: 15px;
 }
 
+.skill-tree {
+  margin-top: 10px;
+}
+
 .nav-container {
+  margin-top: 13%;
   max-width: 200px;
   height: 150px;
   margin-left: auto;
@@ -55,6 +69,13 @@ body::-webkit-scrollbar{
   display: grid;
   grid-template-columns: auto auto auto auto ; 
   gap: 5px;
+  animation: top-to-bottom 200ms ease-in;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    transform: translateY(-100%);
+  } 
 }
 
 .image-container {
@@ -89,7 +110,6 @@ button {
   color: seagreen
 }
 
-/* think to use clip property for  overflow text */
 
 
 /* begin responsiveness for mobile */
