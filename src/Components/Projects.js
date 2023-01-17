@@ -10,7 +10,7 @@ export default function Projects({description, length, link,image}) {
 
     return (
         <section className="image-container">
-            <a href={link} target="blank"><img className="project-img" src={image} /></a>
+            <a href={link} target="blank"><img className="project-img" src={image} alt=""/></a>
             <p className="project-dscrp">
                 {isExpanded ? description : `${description.slice(0, length)}...`}
                 <span>

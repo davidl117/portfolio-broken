@@ -23,7 +23,7 @@ export default function Work() {
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsvitla.com%2Fuploads%2F0%2F1704-websiteg.jpg%3F1552573200&f=1&nofb=1&ipt=6a1ed359db56c43f7318a78588e6c222a60d62d22b7d1bbfaf0b835793b81267&ipo=images",
      },
     }
-
+//add screen shots for each project
     return (
       <div className="project-frame">
         <Projects 
