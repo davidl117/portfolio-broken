@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css";
 import Navigation from './Components/Navigation';
 import Header from './Components/Header';
+import Contact from './Components/Contact';
 import { Routes, Route } from 'react-router-dom';
 import Work from './Components/Work';
 
@@ -14,7 +15,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Header/>}/>
         <Route exact path='/work' element={<Work/>} />
-        {/* <Route exact path='/contact' element={<Contact/>} /> */}
+        <Route exact path='/contact' element={<Contact/>} />
       </Routes>
     </div>
   );

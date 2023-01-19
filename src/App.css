@@ -47,19 +47,25 @@ body::-webkit-scrollbar{
   background-color: orange;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  min-width: 100%;
   height: 40px;
   margin-top: -5vmax;
-  margin: 0px 0 0 0; 
+  margin: 0 0 0 0; 
   font-size: larger;
   padding: 10px;
   box-shadow: 0 2px 4px 2px orange;
+  position: fixed;
+  top: 0;
 }
 
-.nav-container > li {
+li {
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 100px;
   list-style: none;
   font-weight: 600;
   font-size: larger;
+  text-transform: uppercase;
 }
 
 a {
@@ -76,20 +82,17 @@ a:hover {
   color: wheat;
 }
 
-.app-container {
-}
-
 .project-frame {
   display: grid;
   grid-template-columns: auto auto auto auto ; 
   margin: 12% auto 20% 15%;
   gap: 5px;
-  animation: top-to-bottom 200ms ease-in;
+  animation: bottom-to-top 200ms ease-in;
 }
 
-@keyframes top-to-bottom {
+@keyframes bottom-to-top {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(100%);
   } 
 }
 
@@ -103,6 +106,12 @@ a:hover {
   width: 260px;
   height: 300px;
   border: 2px solid orange;
+  opacity: 50%;
+  transition: opacity 0.5s ease;
+}
+
+.project-img:hover {
+  opacity: 100%;
 }
 
 .project-dscrp {
@@ -118,24 +127,171 @@ button {
   cursor: pointer;
 }
 
+.nav-container button {
+  display: none;
+}
+
 .display-text-btn {
   padding: 5px;
   border: none;
   color: seagreen
 }
 
+.description-image {
+  display: none;
+}
+
+/* ------------Contact Page Styling------------- */
+
+.contact-container {
+  position: relative;
+  top: 100px;
+  margin-left: 41%;
+  color: white;
+}
 
 
-/* begin responsiveness for mobile */
-@media (max-width: 600px) {
-  .app-container {
-      display: block;
-      text-align: center;
-      min-width: 360px;
+/*-------------Begin responsiveness for mobile---------------*/
+
+@media (max-width: 800px) {
+  
+  .project-dscrp {
+    display: none ;
   }
+  
+  .description-image {
+    display: block;
+    position: relative;
+    top: -200px;
+    color: rgb(90, 244, 255);
+    font-size: larger;
+    opacity: 100%;
+    margin-left: 15px;
+  }
+  
+  
+  .project-frame {
+    display: block;
+    /* flex-direction: column; */
+    margin-left: auto;
+    animation: fade-in none;
+  }
+
+  .project-frame {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0%;
+    }
+    100% {
+      opacity:100%;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .header-container {
+    max-width: fit-content;
+  }
+
+  .ham-bars {
+    position: fixed;
+    display: inline-block;
+    margin-right: auto;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    left: 25px;
+  }
+  
   .nav-container {
-      display: flex;
-      gap: 70px;
-      min-width: 339px;    
+    position: relative;
   }
+
+  .nav-container button {
+    position: fixed;
+    display: block;
+    background-color: orange;
+    border: none;
+  }
+  
+  .menu-open {
+    position: fixed;
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+    z-index: 12;
+    animation: menu-to-open .5s ease;
+  }
+  
+  @keyframes menu-to-open {
+  0% {
+    transform: translatey(-100%);
+  }
+  }
+
+  .li-display {
+    display: block;
+    list-style-type: none;
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: larger;
+    text-transform: uppercase;
+    z-index: 12;
+  }
+
+  .li-display li {
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+
+  .li-none {
+    display: none;
+    margin-top: 15%;
+  }
+
+  a:hover {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 2px 5px black;
+  }
+
 }
