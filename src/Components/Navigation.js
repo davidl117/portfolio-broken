@@ -24,13 +24,14 @@ export default function Navigation() {
             </button>
             <div className={` ${menuOpen ? "menu-open li-display": "li-none"}`}>
                 <li>
-                    <a href="/">Home</a>
+                    <a className="menu-link" href="/">Home</a>
+                </li>
+                {/* background on txt */}
+                <li>
+                    <a className="menu-link" href="work">My Work</a>
                 </li>
                 <li>
-                    <a href="work">My Work</a>
-                </li>
-                <li>
-                    <a href="contact">Contact</a>
+                    <a className="menu-link" href="contact">Contact</a>
                 </li>
             </div>
         </nav>
