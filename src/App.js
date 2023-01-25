@@ -13,7 +13,7 @@ export default function App() {
     <div className='app-container'>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Header/>}/>
+        <Route exact path="/header" element={<Header/>}/>
         <Route exact path='/work' element={<Work/>} />
         <Route exact path='/contact' element={<Contact/>} />
       </Routes>
