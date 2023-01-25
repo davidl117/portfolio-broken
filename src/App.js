@@ -5,7 +5,6 @@ import Header from './Components/Header';
 import Contact from './Components/Contact';
 import { Routes, Route } from 'react-router-dom';
 import Work from './Components/Work';
-// import data from './Components/data';
 
 
 

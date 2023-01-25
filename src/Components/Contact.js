@@ -20,7 +20,7 @@ export default function Contact() {
         //         console.log("Error!");
         // });
         setSubmitted(prevSubmit => !prevSubmit)
-            alert("Message Submitted")
+            // alert("Message Submitted")
             console.log(submitted);
         } 
 
@@ -64,7 +64,9 @@ export default function Contact() {
                 />
                 <input className="submit" type="submit" value="Submit Form" onClick={handleSubmit} />
             </form>
+            <div className="return-home-submit">
             {submitted ? <a href="/">Return to Home</a> : ""}
+            </div>
         </div>
     )
 }
