@@ -12,10 +12,22 @@ export default function Projects({description, length, link, image, demo}) {
 
     return (
         <section className="image-container">
-            <a className="git-link" href={link} target="blank">
+            <a className="git-link">
             <img className="project-img"
                  src={image} alt="" />
-                 <span className="description-onImage" >{description}</span>
+                 <span className="responsive-demo-btn-container">
+                    <a href={demo} target="_blank">
+                        <button className="responsive-demo-buttons">
+                            Live Demo
+                        </button>
+                    </a>
+                    <a href={link} target="_blank">
+                        <button className="responsive-demo-buttons">
+                            <FontAwesomeIcon icon={faGithub} /> Source Code
+                        </button>
+                    </a>
+                 </span>
+                 <span className="description-responsive" >{description}</span>
             </a>
             <p className="project-dscrp">
                 {isExpanded ? description : `${description.slice(0, length)}...`}
