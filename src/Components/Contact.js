@@ -1,52 +1,70 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
-const form_endpoint = "https://public.herotofu.com/v1/EXAMPLE_FORM_ID";
 
 export default function Contact() {
 
-    const[submitted, setSubmitted] = useState(false);
+    const[submitted, setSubmitted] = useState(false)
 
-    const handleSubmit = (e) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 100);
-    };
+        // emailjs.sendForm('service_nx5586o', 
+        //                  "template_7ksyypc", 
+        //                  form.current,
+        //                  "c201KRp5LjlfqLZok")
+        // .then((result) => {
+        //     console.log("message sent");
+        //  }, (error) => {
+        //         console.log("Error!");
+        // });
+        setSubmitted(prevSubmit => !prevSubmit)
+            alert("Message Submitted")
+            console.log(submitted);
+        } 
 
+     const styles = {
+        display: submitted ? "none" : ""
+    }
+        
+    const handleSubmit = () => {
+         return (
+            "Thanks! I'll be in touch ASAP!"
+         )
+    }
 
     return (
         <div className="contact-container">
-            <h1>Get in touch with me</h1>
+            <h1>{submitted ? "Thanks! I'll be in touch ASAP!": "Get in touch with me"}</h1>
             <form 
                   className="form-container"
-                  action={form_endpoint} //TODO
-                  onSubmit={handleSubmit}
-                  method="POST" //TODO
-                  target="_blank"
+                  ref={form}
+                  onSubmit={sendEmail}
+                  style={styles}
+                //   target="_blank"
             >
                 <input 
                     type="text"
-                    placeholder="Full name here..."
-                    name="name"
+                    placeholder="Name here..."
+                    name="user_name"
                     // required
                 />
                 <input 
                     type="email"
-                    placeholder="Email@example.com"
+                    placeholder="Email"
                     name="email"
                     // required
                 />
                 <textarea 
-                    placeholder="Type you message here..."
+                    placeholder="Your message here..."
                     name="message"
                     rows={7}
                     // required
                 />
-                <button className="submit" type="submit">Submit Form</button>
+                <input className="submit" type="submit" value="Submit Form" onClick={handleSubmit} />
             </form>
+            {submitted ? <a href="/">Return to Home</a> : ""}
         </div>
     )
 }
