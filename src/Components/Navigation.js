@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom"
 
 // import { Link } from "react-router-dom";
 
@@ -24,14 +25,14 @@ export default function Navigation() {
             </button>
             <div className={` ${menuOpen ? "menu-open li-display": "li-none"}`}>
                 <li>
-                    <a className="menu-link" href="/">Home</a>
+                    <Link className="menu-link" to="/">Home </Link>
                 </li>
                 {/* background on txt */}
                 <li>
-                    <a className="menu-link" href="work">My Work</a>
+                    <Link className="menu-link" to="/work">My Work</Link>
                 </li>
                 <li>
-                    <a className="menu-link" href="contact">Contact</a>
+                    <Link className="menu-link" to="/contact">Contact</Link>
                 </li>
             </div>
         </nav>
