@@ -204,7 +204,7 @@ button {
 
 .contact-container {
   color: white;
-  margin: 10% auto 0 40%;
+  margin: 10% 0 0 40%;
 }
 
 .form-container {
@@ -254,14 +254,10 @@ textarea {
   
   .description-responsive {
     display: block;
-    /* position: relative; */
-    /* top: -200px; */
     color: orange;
     font-size: larger;
     font-weight: bold;
-    /* opacity: 100%; */
     text-align: center;
-    /* margin-left: 15px; */
   }
 
   .responsive-demo-btn-container {
@@ -419,6 +415,7 @@ textarea {
 .contact-container {
   color: white;
   margin: 20%;
+  margin-top: 105px;
   text-align: center;
 }
 
@@ -433,5 +430,9 @@ textarea {
 
 .media-links a {
   display: flex;
+}
+
+.return-home-submit {
+  margin-left: -2%;
 }
 }
