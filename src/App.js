@@ -12,10 +12,18 @@ export default function App() {
   return (
     <div className='app-container'>
       <Navigation />
+<<<<<<< Updated upstream
       <Routes>
         <Route exact path="/" element={<Header/>}/>
         <Route exact path='/work' element={<Work/>} />
         <Route exact path='/contact' element={<Contact/>} />
+=======
+      <Routes basename="" >
+        <Route  path='' element={<Header/>} />
+        <Route  path='/work' element={<Work/>} />
+        <Route  path='/contact' element={<Contact/>} />
+        <Route path="*" element={<p>Page not found</p>} />
+>>>>>>> Stashed changes
       </Routes>
     </div>
   );
