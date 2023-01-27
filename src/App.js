@@ -13,9 +13,10 @@ export default function App() {
     <div className='app-container'>
       <Navigation />
       <Routes>
-        <Route  path="/" element={<Header/>} />
+        <Route  path='/header' element={<Header/>} />
         <Route  path='/work' element={<Work/>} />
         <Route  path='/contact' element={<Contact/>} />
+        <Route path="*" element={<p>Page not found</p>} />
       </Routes>
     </div>
   );
