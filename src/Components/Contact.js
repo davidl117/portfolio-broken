@@ -11,17 +11,17 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // emailjs.sendForm('service_nx5586o', 
-        //                  "template_7ksyypc", 
-        //                  form.current,
-        //                  "c201KRp5LjlfqLZok")
-        // .then((result) => {
-        //     console.log("message sent");
-        //  }, (error) => {
-        //         console.log("Error!");
-        // });
+        emailjs.sendForm('service_nx5586o', 
+                         "template_7ksyypc", 
+                         form.current,
+                         "c201KRp5LjlfqLZok")
+        .then((result) => {
+            console.log("message sent");
+         }, (error) => {
+                console.log(error);
+        });
         setSubmitted(prevSubmit => !prevSubmit)
-            // alert("Message Submitted")
+            alert("Message Submitted")
             console.log(submitted);
         } 
 
@@ -49,24 +49,24 @@ export default function Contact() {
                     type="text"
                     placeholder="Name here..."
                     name="user_name"
-                    // required
+                    required 
                 />
                 <input 
                     type="email"
                     placeholder="Email"
                     name="email"
-                    // required
+                    required
                 />
                 <textarea 
                     placeholder="Your message here..."
                     name="message"
                     rows={7}
-                    // required
+                    required
                 />
                 <input className="submit" type="submit" value="Submit Form" onClick={handleSubmit} />
             </form>
             <div className="return-home-submit">
-            {submitted ? <a href="/">Return to Home</a> : ""}
+            {submitted ? <Link to="/">Return to Home</Link> : ""}
             </div>
         </div>
     )

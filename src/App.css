@@ -270,7 +270,10 @@ textarea {
 
   .responsive-demo-buttons {
     display: inline-block; 
+    position: relative;
+    bottom: 135px;
     border-radius: 6px;
+    border: none;
     padding: 5px;
     background-color: orange;
   }
@@ -348,7 +351,6 @@ textarea {
     display: inline-block;
     margin-right: auto;
     height: 25px;
-    position: fixed;
     top: 17px;
     left: 25px;
   }
@@ -370,7 +372,7 @@ textarea {
     background-color: orange;
     height: 100%;
     width: 100%;
-    z-index: 12;
+    z-index: 11;
     animation: menu-to-open .5s ease;
   }
   
@@ -381,33 +383,37 @@ textarea {
   }
 
   .li-display {
-    display: block;
+    display: inline-block;
     list-style-type: none;
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: 600;
     font-size: larger;
     text-transform: uppercase;
     z-index: 12;
+    text-align: center;
   }
 
   .li-display li {
-    margin-top: 15%;
+    border-radius: 6px;
+    padding: 5px;
     margin-left: 35%;
-    margin-top: 30% 
+    margin-right: 25%;
+    margin-top: 15%; 
   }
 
   .li-none {
     display: none;
     margin-top: 15%;
   }
+  .menu-close {
+    transform: translateY(100%);
+  }
 
   .menu-link:hover {
-    background: black;
     color: white;
     border-radius: 5px;
     width: 100px;
     text-align: center;
-    box-shadow: 0 2px 5px black;
   }
 
   /* ------------Contact Page Styling------------- */
