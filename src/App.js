@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className='app-container'>
       <Navigation />
-      <Routes>
+      <Routes basename="/portfolio" >
         <Route  path='/' element={<Header/>} />
         <Route  path='/work' element={<Work/>} />
         <Route  path='/contact' element={<Contact/>} />
