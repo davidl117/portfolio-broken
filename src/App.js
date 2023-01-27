@@ -12,8 +12,8 @@ export default function App() {
   return (
     <div className='app-container'>
       <Navigation />
-      <Routes>
-        <Route  path='/header' element={<Header/>} />
+      <Routes basename='/portfolio'>
+        <Route  path='/' element={<Header/>} />
         <Route  path='/work' element={<Work/>} />
         <Route  path='/contact' element={<Contact/>} />
         <Route path="*" element={<p>Page not found</p>} />
