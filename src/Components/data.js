@@ -4,7 +4,7 @@ export default  [
             description: "This is a To-Do List made with HTML, CSS and JavaScript and has basic functionality.It can store and delete date with more feature to come.",
             descriptionLength: 80,
             link: "https://github.com/davidl117/todo-list",
-            demo: "https://davidl117.github.io/Todo/todo.html"
+            demo: "https://davidl117.github.io/Todo/todo.html",
             image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fonplanners.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Ftemplate_fancy%2Fpublic%2Ftemplate-images%2Fprintable-daily-do-list-template_0.png&f=1&nofb=1&ipt=bac47b25a2af55e22cc0ede61eac7f72bf9449f59a88116c65263cc292d781b3&ipo=images",
         },
         {
