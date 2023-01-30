@@ -7,6 +7,7 @@ export default function Work() {
 //add screen shots for each project
 const projects = data.map(project => {
   return <Projects 
+            demo={project.demo}
             link={project.link}
             description={project.description}
             length={project.descriptionLength}
