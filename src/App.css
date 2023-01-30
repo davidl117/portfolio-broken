@@ -353,6 +353,7 @@ textarea {
     height: 25px;
     top: 17px;
     left: 25px;
+    z-index: 1;
   }
   
   .nav-container {
@@ -385,7 +386,7 @@ textarea {
   .li-display {
     display: inline-block;
     list-style-type: none;
-    margin-top: 5%;
+    margin-top: 11%;
     font-weight: 600;
     font-size: larger;
     text-transform: uppercase;
@@ -398,7 +399,7 @@ textarea {
     padding: 5px;
     margin-left: 35%;
     margin-right: 25%;
-    margin-top: 15%; 
+    margin-top: 25%; 
   }
 
   .li-none {
