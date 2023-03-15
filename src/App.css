@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
-  background-color: rgb(28, 28, 36);
+  background-color: rgb(1, 1, 15);
 }
 
 body::-webkit-scrollbar{
@@ -93,8 +93,8 @@ a:visited {
 }
 
 a:hover {
+  background-color: black;
   text-decoration: none;
-  color: wheat;
 }
 
 .project-frame {
@@ -348,7 +348,7 @@ textarea {
   /* --------------navigation styling---------------- */
   .ham-bars {
     position: fixed;
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: auto;
     height: 25px;
     top: 17px;
@@ -378,9 +378,9 @@ textarea {
   }
   
   @keyframes menu-to-open {
-  0% {
-    transform: translatey(-100%);
-  }
+    0% {
+      transform: translatey(-100%);
+    }
   }
 
   .li-display {
@@ -406,9 +406,7 @@ textarea {
     display: none;
     margin-top: 15%;
   }
-  .menu-close {
-    transform: translateY(100%);
-  }
+
 
   .menu-link:hover {
     color: white;

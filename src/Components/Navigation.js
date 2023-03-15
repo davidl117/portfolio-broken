@@ -7,7 +7,6 @@ import {Link} from "react-router-dom"
 export default function Navigation() {
 
     const[menuOpen, setIsOpen] = useState(false);
-    console.log(menuOpen)
 
     function toggleMenu() {
         setIsOpen(prevOpen => !prevOpen)
@@ -19,7 +18,7 @@ export default function Navigation() {
 
     return (
         <nav className="nav-container">
-            <button className={` ${menuOpen ? "menu-open": ""}`}>
+            <button className={`"" ${menuOpen ? "menu-open": ""}`}>
                 <FontAwesomeIcon 
                              onClick={toggleMenu}
                              className="ham-bars" 
