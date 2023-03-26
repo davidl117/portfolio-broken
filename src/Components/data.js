@@ -1,7 +1,7 @@
 export default  [    
         {
              
-            description: "This is a To-Do List built with HTML, CSS and JavaScript and has basic functionality.It can store and delete date with more features to come.",
+            description: "This is a To-Do List built with HTML, CSS and JavaScript and has basic functionality. It can store and delete data with more features to come.",
             descriptionLength: 80,
             link: "https://github.com/davidl117/todo-list",
             demo: "https://davidl117.github.io/Todo/todo.html",
@@ -11,7 +11,7 @@ export default  [
             description: "This is a bakery website built in React and with multiple pages. It is a build for a client and is a work in progress.",
             descriptionLength: 80,
             link: "https://github.com/davidl117/The-Bakery-Uncommon",
-            demo:"",
+            demo:"https://davidl117.github.io/bakery-website/",
             image: "./images/Users/lasky/Desktop/Pictures/Screenshots/bakeryscreenshot.jpg", 
         },
         {

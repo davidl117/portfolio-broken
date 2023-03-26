@@ -74,6 +74,11 @@ body::-webkit-scrollbar{
   z-index: 1;
 }
 
+.menu-link:hover {
+  background-color: rgba(31, 30, 30, 0.2);
+  border-radius: 4px;
+}
+
 li {
   display: inline-block;
   margin-right: 80px;
@@ -94,7 +99,6 @@ a:visited {
 }
 
 a:hover {
-  background-color: black;
   text-decoration: none;
 }
 
@@ -181,10 +185,10 @@ button {
 }
 
 .demo-buttons:hover {
-  box-shadow: 0px 0px 5px 2px black;
+  box-shadow: 0px 0px 1px 1px white;
 } 
 .demo-buttons:active {
-  box-shadow: 0px 0px 15px black;
+  box-shadow: 0px 0px 5px white;
 } 
 
 
