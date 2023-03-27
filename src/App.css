@@ -9,24 +9,17 @@ body {
   background-color: rgb(23, 23, 37);
 }
 
-/* add scrollbar */
-body::-webkit-scrollbar{
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  font-style: oblique;
-  font-variant-caps: all-petite-caps;
+.app-container {
+  padding: 1em;
 }
 
 .header-container {
   max-width: 1000px;
   color: white;
   font-size: 1.4rem;
-  padding-top: 2%;
-  padding-right: 1.25em;
+  padding: 2%  2em;
   animation: left-to-right 400ms ease-in;
-  margin-left: 15%;
-  margin-top: 13%;
+  margin: 10% auto ;
 }
 
 @keyframes left-to-right {
@@ -72,6 +65,27 @@ body::-webkit-scrollbar{
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+.logo {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 540px) {
+  .logo {
+    position: relative;
+    left: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    position: relative;
+    left: 80%;
+  }
 }
 
 .menu-link:hover {
@@ -130,13 +144,17 @@ a:hover {
 .image-container {
   min-width: 260px;
   display: flex;
-  margin-top: 65px;
+  /* margin-top: 65px; */
+}
+
+@media (max-width) {
+  
 }
 
 .project-img {
   border-color: white;
   border-radius: 5px;
-  min-width: 460px;
+  max-width: 900px;
   height: 500px;
   object-fit: contain;
   transition: opacity 0.5s ease;
@@ -294,18 +312,27 @@ textarea {
   }
 
   .project-img {
-    margin-right: auto;
-    width: 260px;
-    height: 300px;
-    opacity: 50%;
+    min-width: 200px;
+    height: 250px;
     transition: opacity 0.5s ease;
   }
   
   .project-frame {
     max-width: 100%;
     display: inline-block;
-    margin: 15% 0 0 16%;
+    margin: 15% 5% 0 auto;
     animation: fade-in none;
+  }
+
+  .logo {
+    margin: 0 2em 0 auto;
+    /* position: fixed; */
+  }
+
+  @media (max-width: 670px) {
+    .project-frame {
+      margin: 15% 15em 0 0;
+    }
   }
 
   .project-frame {

@@ -13,7 +13,6 @@ export default function Header() {
                 I am always striving to learn new code and techniques to further my skills
                 as a developer.  I shall remain a student for life.
             </h3>
-            {/* make new para */}
             <h4>My hobbies: Guitar, hiking, trying new code.</h4>
             <hr></hr>
             <br></br>
