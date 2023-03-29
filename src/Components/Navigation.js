@@ -18,22 +18,22 @@ export default function Navigation() {
 
     return (
         <nav className="nav-container">
-            <button className={`"" ${menuOpen ? "menu-open": ""}`}>
+            <button className={` ${menuOpen ? "menu-open transition": "menu-close transition"}`}>
                 <FontAwesomeIcon 
                              onClick={toggleMenu}
                              className="ham-bars" 
                              icon={faBars}
-                />
+                             />
             </button>
-            <div className={` ${menuOpen ? "menu-open li-display": "li-none"}`}>
-                <li>
-                    <Link className="menu-link" to="/" onClick={() => closeMenu()}>Home </Link>
+            <div className={` "li-display" ${menuOpen ? "li-display": "li-none"}`}>
+                <li className="menu-link">
+                    <Link to="/" onClick={() => closeMenu()}>Home </Link>
                 </li>
-                <li>
-                    <Link className="menu-link" to="/work" onClick={() => closeMenu()}>My Work</Link>
+                <li className="menu-link">
+                    <Link to="/work" onClick={() => closeMenu()}>My Work</Link>
                 </li>
-                <li>
-                    <Link className="menu-link" to="/contact" onClick={() => closeMenu()}>Contact</Link>
+                <li className="menu-link">
+                    <Link to="/contact" onClick={() => closeMenu()}>Contact</Link>
                 </li>
             </div>
         </nav>

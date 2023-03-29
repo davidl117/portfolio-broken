@@ -1,5 +1,6 @@
 import React from 'react';
-import "./App.css";
+// import "./App.css";
+import "./styles.css";
 import Navigation from './Components/Navigation';
 import Header from './Components/Header';
 import Contact from './Components/Contact';

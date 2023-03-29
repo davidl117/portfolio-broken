@@ -11,8 +11,8 @@ export default function Projects({description, length, link, image, demo}) {
     };
 
     return (
-        <section className="image-container">
-            <a className="git-link">
+        <section className="image-section-container">
+            <div className="image-container">
             <img className="project-img"
                  src={image} alt="" />
                  <span className="responsive-demo-btn-container">
@@ -28,7 +28,7 @@ export default function Projects({description, length, link, image, demo}) {
                     </a>
                  </span>
                  <span className="description-responsive" >{description}</span>
-            </a>
+            </div>
             <p className="project-dscrp">
                 {isExpanded ? description : `${description.slice(0, length)}...`}
                 <span>
