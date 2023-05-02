@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ff34d8c2.css",
-    "main.js": "/portfolio/static/js/main.0e364ff4.js",
+    "main.css": "/portfolio/static/css/main.8ed0128a.css",
+    "main.js": "/portfolio/static/js/main.aeae1744.js",
+    "static/media/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg": "/portfolio/static/media/shahadat-rahman-BfrQnKBulYQ-unsplash.505df75e5fe07879594f.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.3aba72cd3338530a6355.png",
     "index.html": "/portfolio/index.html",
-    "main.ff34d8c2.css.map": "/portfolio/static/css/main.ff34d8c2.css.map",
-    "main.0e364ff4.js.map": "/portfolio/static/js/main.0e364ff4.js.map"
+    "main.8ed0128a.css.map": "/portfolio/static/css/main.8ed0128a.css.map",
+    "main.aeae1744.js.map": "/portfolio/static/js/main.aeae1744.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff34d8c2.css",
-    "static/js/main.0e364ff4.js"
+    "static/css/main.8ed0128a.css",
+    "static/js/main.aeae1744.js"
   ]
 }
